@@ -178,3 +178,11 @@ var question1 = function() {
   }
 
   
+// End of Quiz HTML Elements 
+var EndOfQuiz = function(){
+    quizHeading.innerHTML = "Thanks for taking my quiz, please enter your information"
+    document.getElementById("form").setAttribute("style", "display:flex")
+    document.getElementById("questions").setAttribute ("style", "display:none")
+    document.getElementById("respons-footer").setAttribute("style", "display:none")
+}
+    
