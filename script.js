@@ -186,3 +186,33 @@ var EndOfQuiz = function(){
     document.getElementById("respons-footer").setAttribute("style", "display:none")
 }
     
+
+//Load the Next Questions HTML Elements
+function loadNextQuestion(){
+    switch(currentQuestion){
+        case currentQuestion = 1:{
+            question1();
+            break;
+        }
+        case currentQuestion =  2:{
+           question2();
+           break;
+        }
+        case currentQuestion =  3:{
+           question3();
+           break;
+        }
+
+        case currentQuestion =  4:{
+           question4();
+           break;
+        }
+        case currentQuestion = 5:{
+            EndOfQuiz();
+            break;
+        }
+
+    }   
+}
+
+
