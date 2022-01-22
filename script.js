@@ -306,3 +306,7 @@ currentQuestion++;
 setInterval(loadNextQuestion, 1000);
 }
 
+
+localStorage.setItem("highscore", JSON.stringify({}))
+
+ pageContentEl.addEventListener("click", quizButtonHandler);
