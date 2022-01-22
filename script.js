@@ -216,3 +216,93 @@ function loadNextQuestion(){
 }
 
 
+// Handle the Question buttons
+var quizButtonHandler = function (event) {
+     
+    // get target element from event
+  var button = event.target;
+
+    switch(currentQuestion){
+        case 1:{
+            quiz1Button(button);
+            break;
+        }
+        case 2:{
+            quiz2Button(button);
+            break;
+        }
+        case 3:{
+            quiz3Button(button);
+            break;
+        }
+        case 4: {
+            quiz4Button(button);
+        }
+        
+    }
+ }
+
+
+
+
+ //Question 1 button handler
+var quiz1Button = function(button){
+    if(button.matches(".parentheses-btn")){
+         responseFooterDiv.innerHTML = "Correct";
+    }
+    else{
+        responseFooterDiv.innerHTML = "False";
+        count = count-5
+    }
+    currentQuestion++;
+
+    setTimeout(loadNextQuestion, 1000);
+}
+
+
+//question 2 button handler
+var quiz2Button = function(button){
+    if(button.matches(".alerts-btn")){
+         responseFooterDiv.innerHTML = "Correct";
+    }
+    else{
+         responseFooterDiv.innerHTML = "False";
+         count = count-5
+    }
+
+    currentQuestion++;
+
+    setInterval(loadNextQuestion, 1000);
+}
+
+//question 3 button handler
+var quiz3Button = function(button){
+        if(button.matches(".all-of-the-above-btn")){
+         responseFooterDiv.innerHTML = "Correct";
+    }
+    else{
+         responseFooterDiv.innerHTML = "False";
+         count = count-5
+    }
+
+    
+    currentQuestion++;
+
+    setInterval(loadNextQuestion, 1000);
+}
+
+var quiz4Button = function(button){
+    if(button.matches(".consolelog-btn")){
+     responseFooterDiv.innerHTML = "Correct";
+}
+else{
+     responseFooterDiv.innerHTML = "False";
+     count = count-5
+}
+
+
+currentQuestion++;
+
+setInterval(loadNextQuestion, 1000);
+}
+
