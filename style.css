@@ -1,0 +1,54 @@
+
+h1{
+    text-align: center;
+}
+
+.buttons-div{
+    padding: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+button
+{
+    display: flex;
+    font-size: 35px;
+    width: 445px;
+    justify-content: space-around;
+    
+}
+.timer{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.startBtn{
+    display: flex;
+    
+}
+#start {
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    display: none;
+}
+
+#questions{
+display: none;
+justify-content: space-around;
+}
+
+#highscores {
+    display: none
+}
+
+footer {
+    text-align: center;
+    font-size: medium;
+    
+}
