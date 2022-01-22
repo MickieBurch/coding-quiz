@@ -6,3 +6,15 @@ var currentQuestion = 1;
 var questions = 4;
 var currentAnswer = "";
 var count = 75;
+
+
+var start = document.getElementById("start")
+var startbtn = document.getElementById("startbtn")
+
+
+//` `
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
